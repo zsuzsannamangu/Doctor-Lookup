@@ -41,8 +41,7 @@ _A website where users may enter a medical issue (ie: “sore throat”) into a
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| A user should be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query.
- | rash | 1. Dr. Samantha Srmith, 760 N Height Ave., 503-333-3434, dermatologist, samsrmithdr.com, accepting new patients; 2. ... |
+| A user should be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query. | rash | 1. Dr. Samantha Srmith, 760 N Height Ave., 503-333-3434, dermatologist, samsrmithdr.com, accepting new patients; 2. ... |
 | A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query. | Samantha Srmith | Dr. Samantha Srmith, 760 N Height Ave., 503-333-3434, dermatologist, samsrmithdr.com, accepting new patients |
 | If the API call results in an error, the application should return a notification that states what the error is. | bad API call | Error: Bad Request |
 | If the query response doesn't include any doctors, the application should return a notification that states that no doctors meet the criteria. | Samantha Srmithhh | No doctors meet your criteria. |
