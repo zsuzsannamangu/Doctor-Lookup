@@ -50,7 +50,6 @@ _A website where users may enter a medical issue (ie: “sore throat”) into a
 
 * Application correctly makes an API call and parses data from the API response.
 * The application handles errors when the API call doesn't return a 200 OK status.
-* Business logic is tested with Jasmine and Karma.
 * Dependencies are managed with npm.
 * Webpack is used to lint, bundle, and process code.
 
