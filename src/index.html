@@ -6,22 +6,15 @@
   <body>
     <div class="container">
       <div class="doctor-lookup">
-        <label for="medical-issue">Search by medical issue</label>
-        <input id="medical-issue" type="text">
+        <label for="search">Search</label>
+        <input id="search" type="text">
+        <br>
+        <label for="byName">search by name</label>
+        <input id="byName" type="checkbox">
         <span class="validity"></span>
-        <button class="btn-success" id="doctorSpecialty">Enter</button>
-
-        <label for="name">Search by doctor's name</label>
-        <input id="name" type="text">
-        <span class="validity"></span>
-        <button class="btn-success" id="doctorName">Enter</button>
-
+        <button class="btn-success" id="doctorSearch">Enter</button>
         <div class="showErrors"></div>
-        <div class="showName"></div>
-        <div class="showPhone"></div>
-        <div class="showAddress"></div>
-        <div class="showSpecialties"></div>
-        <div class="showAccept"></div>
+        <div class="doctorsHtml"></div>
       </div>
     </div>
   </body>

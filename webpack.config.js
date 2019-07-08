@@ -20,15 +20,15 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
+    new Dotenv(),
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'Doctor Lookup',
       template: './src/index.html',
       //This is the HTML file we'll bundle. Here we specify that it should be the index.html file in the src folder.
-      inject: 'body',
+      inject: 'body'
     })
-    new Dotenv()
   ],
   module: {
     rules: [
