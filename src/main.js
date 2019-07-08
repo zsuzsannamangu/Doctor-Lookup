@@ -11,8 +11,7 @@ $(document).ready(function() {
     $('#search').val("");
 
     let doctorLookup = new DoctorLookup();
-    let checked = $('#byName').is(":checked")
-    console.log(checked);
+    let checked = $('#byName').is(":checked");
     let promise = doctorLookup.getDoctor(search=search, name=checked);
 
     promise.then(function(response) {
