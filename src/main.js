@@ -1,4 +1,4 @@
-import { DoctorLookup } from './doctor-lookup';
+import { getDoctor } from './doctor-lookup';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
@@ -10,9 +10,8 @@ $(document).ready(function() {
     let search = $('#search').val();
     $('#search').val("");
 
-    let doctorLookup = new DoctorLookup();
     let checked = $('#byName').is(":checked");
-    let promise = doctorLookup.getDoctor(search=search, name=checked);
+    let promise = getDoctor(search, checked);
 
     promise.then(function(response) {
       let body = JSON.parse(response);
